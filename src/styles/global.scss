@@ -1,0 +1,39 @@
+div.swiper-button-next,
+div.swiper-button-prev {
+  color: var(--chakra-colors-orange-100);
+  margin: 0 1.25rem;
+
+  &:after {
+    font-size: xx-large;
+  }
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > div.swiper-pagination-bullets {
+  bottom: 1.5rem;
+}
+
+.swiper-container-horizontal >
+.swiper-pagination-bullets
+span.swiper-pagination-bullet {
+  background: var(--chakra-colors-gray-400);
+  opacity: 1;
+
+  width: 1rem;
+  height: 1rem;
+
+  margin: 0 0.375rem;
+}
+
+.swiper-container-horizontal >
+.swiper-pagination-bullets
+span.swiper-pagination-bullet-active {
+  background: var(--chakra-colors-orange-100);
+}
+
+@media(max-width: '1439px') {
+  div.swiper-container {
+    width: 100% !important;
+  }
+}
