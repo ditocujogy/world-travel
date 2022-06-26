@@ -32,7 +32,7 @@ export default function Continent() {
   useEffect(() => {
     async function loadContinent() {
       const { slug } = router.query;
-      const buffer = await fetch(`http://localhost:3000/api/${slug}`);
+      const buffer = await fetch(`http://localhost:3005/api/${slug}`);
       const response = await buffer.json();
 
       if (response === null) {

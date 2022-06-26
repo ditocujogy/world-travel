@@ -19,7 +19,7 @@ export function MySwiper() {
 
   useEffect(() => {
     async function getContinents() {
-      const response = await fetch('http://localhost:3000/api/continents');
+      const response = await fetch('http://localhost:3005/api/continents');
       const continents = await response.json();
       setContinents(continents.continents);
     };
